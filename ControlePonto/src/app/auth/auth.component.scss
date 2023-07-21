@@ -1,0 +1,46 @@
+@import './../../assets/mixins.scss';
+
+.auth-container {
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #403544;
+
+
+    .login-container {
+      display: flex;
+      @include md {
+        width: 60%;
+        height: 80%;
+      }
+      width: 80%;
+      height: 80%;
+      background: #231d25;
+      border-radius: 20px;
+
+      .auth-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        color: white;
+
+        .help-buttons, .registrar, .forgot {
+          button {
+            color: white !important;
+          }
+        }
+
+        .btn-entrar {
+          margin-top: 1rem;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+}
