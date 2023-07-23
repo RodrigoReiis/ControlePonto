@@ -14,14 +14,12 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { environment } from 'src/environments/environments';
-import { RegisterComponent } from './layout/register/register.component';
 import { RegisterModule } from './layout/register/register.module';
-import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { DashboardModule } from './layout/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +31,7 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
     NgbModule,
     AuthModule,
     RegisterModule,
+    DashboardModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
