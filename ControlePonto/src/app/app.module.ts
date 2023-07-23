@@ -16,10 +16,12 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { environment } from 'src/environments/environments';
 import { RegisterComponent } from './layout/register/register.component';
 import { RegisterModule } from './layout/register/register.module';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
