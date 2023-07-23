@@ -33,7 +33,6 @@ export class AuthComponent implements OnInit {
     this.formGroup = new FormGroup({
       login: new FormControl(''),
       senha: new FormControl(''),
-      token: new FormControl(''),
     })
   }
 }

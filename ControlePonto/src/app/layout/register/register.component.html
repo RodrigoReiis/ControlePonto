@@ -5,7 +5,7 @@
         <div class="form form-group">
           <mat-form-field>
             <mat-label>Email</mat-label>
-            <input matInput formControlName="login">
+            <input matInput formControlName="email">
           </mat-form-field>
         </div>
         <div class="form-group">
@@ -14,16 +14,8 @@
             <input matInput [type]="'password'" formControlName="senha">
           </mat-form-field>
         </div>
-        <div class="help-buttons">
-          <div class="registrar">
-            <button mat-button [routerLink]="'/register'"> Registrar-se </button>
-          </div>
-          <div class="forgot">
-            <button mat-button>Esqueceu a senha?</button>
-          </div>
-        </div>
         <div class="btn-entrar">
-          <button mat-raised-button color="primary" class="btn-entrar">Entrar</button>
+          <button mat-raised-button color="primary" class="btn-entrar">Registrar</button>
         </div>
       </form>
     </div>

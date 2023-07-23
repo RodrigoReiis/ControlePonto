@@ -14,6 +14,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { environment } from 'src/environments/environments';
+import { RegisterComponent } from './layout/register/register.component';
+import { RegisterModule } from './layout/register/register.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { environment } from 'src/environments/environments';
     FormsModule,
     NgbModule,
     AuthModule,
+    RegisterModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
