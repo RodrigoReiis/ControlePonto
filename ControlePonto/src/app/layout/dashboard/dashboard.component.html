@@ -1,1 +1,30 @@
-<p>dashboard works!</p>
+<div class="container">
+  <div class="dashboard-container">
+    <div class="reg-container">
+      <div class="date">
+        <h4>Registro de ponto</h4>
+        <section>{{ dataAgora | date: 'dd/MM/yyyy HH:mm' }}</section>
+      </div>
+      <div class="localizacao">
+        <section>{{ geoLocalization }}</section>
+      </div>
+      <form [formGroup]="formGroup">
+        <div class="rep-type">
+          <mat-radio-group aria-label="Selecione a batida" formControlName="isIn">
+            <mat-radio-button value="1">Entrada</mat-radio-button>
+            <mat-radio-button value="0">Saida</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="justificativa">
+          <select name="selJustificativa" id="selJustificativa" formControlName="justificativa">
+            <option value="scua">Scua</option>
+            <option value="projetos">Projetos</option>
+          </select>
+        </div>
+      </form>
+      <div class="btn-reg">
+        <button mat-raised-button color="primary" (click)="savePonto()" [disabled]="!formGroup.valid">Registrar ponto</button>
+      </div>
+    </div>
+  </div>
+</div>

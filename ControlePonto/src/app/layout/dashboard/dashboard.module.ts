@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -17,6 +18,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
     ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
+    MatRadioModule,
     MatFormFieldModule
   ]
 })

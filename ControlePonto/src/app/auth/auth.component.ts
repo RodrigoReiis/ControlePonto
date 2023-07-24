@@ -20,12 +20,6 @@ export class AuthComponent implements OnInit {
 
   ngOnInit(): void {
     this.initForm();
-    this.store.collection('users').snapshotChanges().subscribe((response) => {
-      this.dataSource = response.map(item =>
-        Object.assign({id : item.payload.doc.id}, item.payload.doc.data())
-      );
-      console.log(this.dataSource, 'datasorce')
-    })
 
   }
 
