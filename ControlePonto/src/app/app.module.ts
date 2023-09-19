@@ -36,6 +36,7 @@ import { DashboardModule } from './layout/dashboard/dashboard.module';
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

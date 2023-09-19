@@ -14,8 +14,8 @@
             <input matInput [type]="'password'" formControlName="senha">
           </mat-form-field>
         </div>
-        <div class="btn-entrar">
-          <button mat-raised-button color="primary" class="btn-entrar">Registrar</button>
+        <div class="btn-registrar">
+          <button mat-raised-button color="primary" class="btn-registrar" (click)="register()" [disabled]="formGroup.controls['email'].invalid && formGroup.controls['senha'].invalid">Registrar</button>
         </div>
       </form>
     </div>
