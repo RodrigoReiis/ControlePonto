@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ControlePonto:build:production"
+              "buildTarget": "ControlePonto:build:production"
             },
             "development": {
-              "browserTarget": "ControlePonto:build:development"
+              "buildTarget": "ControlePonto:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ControlePonto:build"
+            "buildTarget": "ControlePonto:build"
           }
         },
         "test": {
