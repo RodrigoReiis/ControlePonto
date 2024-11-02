@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/compat/database';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { GeoLoc } from 'src/modules/GeoLoc.model';
 import { RegPonto } from 'src/modules/RegPonto.model';
@@ -17,7 +15,7 @@ export class DashboardComponent implements OnInit {
   geoLocalization = {latitude: 0, longitude: 0};
   formGroup: FormGroup = new FormGroup('');
 
-  constructor(private store: AngularFirestore) {}
+  constructor() {}
   ngOnInit(): void {
     this.initForm()
     this.getLocalization();
@@ -47,6 +45,6 @@ export class DashboardComponent implements OnInit {
       company: this.formGroup.get('justificativa')?.value
     }
 
-    this.store.collection('reg_ponto').doc('rodrigoreis').set(reg);
+    // this.store.collection('reg_ponto').doc('rodrigoreis').set(reg);
   }
 }

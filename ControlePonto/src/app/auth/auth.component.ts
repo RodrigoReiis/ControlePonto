@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { AngularFireDatabase } from '@angular/fire/compat/database'
-import { AngularFirestore } from '@angular/fire/compat/firestore'
 
 
 
@@ -16,7 +14,7 @@ export class AuthComponent implements OnInit {
   formGroup: FormGroup = new FormGroup('');
   dataSource: any;
 
-  constructor(private db: AngularFireDatabase, private store: AngularFirestore) {}
+  constructor() {}
 
   ngOnInit(): void {
     this.initForm();
